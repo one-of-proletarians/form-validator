@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./dist/index.js" type="module"></script>
+    <script defer src="./index.js" type="module"></script>
+    <!-- <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline'"
+    /> -->
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form action="" class="my-form">
+      <input type="text" name="name" placeholder="Name" />
+      <input type="tel" name="tel" placeholder="Phone" />
+      <input type="text" name="age" placeholder="Age" />
+      <input type="email" name="email" placeholder="Email" />
+      <input type="password" name="password" placeholder="password" />
+      <input type="password" name="confirm" placeholder="confirm" />
+
+      <button class="form__submit" type="submit">Submit</button>
+    </form>
+
+    <style>
+      .reset {
+        margin-top: 40px;
+      }
+
+      .errors {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+      }
+
+      input {
+        border: 1px solid;
+        outline: none;
+
+        padding: 8px 20px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      input.form-error {
+        border: 2px solid red;
+        margin-bottom: 0;
+      }
+
+      button {
+        background-color: lightskyblue;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 20px;
+        color: #fff;
+        border-radius: 5px;
+      }
+
+      button:disabled {
+        cursor: not-allowed;
+        background-color: red;
+      }
+
+      .input-error {
+        font-family: Arial, Helvetica, sans-serif;
+        color: tomato;
+        display: none;
+        margin-bottom: 10px;
+        font-size: 12px;
+      }
+
+      .input-error--visible {
+        display: block;
+      }
+    </style>
+  </body>
+</html>
